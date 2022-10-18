@@ -22,7 +22,7 @@ app.get('/test_get2/:name/:age',(request,response) => {
     response.send('hello test_get2~~~');
 })
 
-// 响应GET请求，可以接收请求体参数
+// 响应POST请求，可以接收请求体参数
 app.post('/test_post',(request,response) => {
     console.log('有人请求test_post了--携带的请求体参数是:',request.body);
     response.send('hello test_post~~~');
